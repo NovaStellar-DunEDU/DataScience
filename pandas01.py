@@ -29,7 +29,7 @@ print("Over 50", df_over_50)
 
 df_surv_over_50 = df[(df['Age']>50) & (df['Survived'] == 1)]
 
-df_children_second_class = df[(df['Age'] < 10) & (df['Pclass' == 2])]
+df_children_second_class = df[(df['Age'] < 10) & (df['Pclass'] == 2)]
 
 print("Without missing data in rows", df.dropna())
 print("Without missing data in columns", df.dropna(axis=1))
